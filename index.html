@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentEase - Budget-Friendly Housing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="whyrentease.css">
+    <link rel="stylesheet" href="headerbutton.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 id="h23">RentEase</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="button">Home</a></li>
+                    <li><a href="#listings" class="button">Listings</a></li>
+                    <li><a href="#features" class="button">Features</a></li>
+                    <li><a href="#contact" class="button">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Find Your Budget-Friendly Home</h2>
+            <p id="p1">Discover affordable housing options tailored for students.</p>
+            <a href="#listings" class="button" id="explrlist" >Explore Listings</a>
+        </div>
+    </section>
+
+    <!-- Listings Section -->
+    <section id="listings">
+        <div class="container">
+            <h2>Available Properties</h2>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search by location, price...">
+                <button onclick="searchProperties()">Search</button>
+            </div>
+
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Images\property1.jpeg" alt="Property 1">
+                        <div class="caption">Mangal Bhawan</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images\property2.png" alt="Property 2">
+                        <div class="caption">Meher Chamber</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images\property3.png" alt="Property 3">
+                        <div class="caption">Arjya Samaj</div>
+                    </div>
+                </div>
+                <!-- Navigation Buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+
+
+            <div id="property-list">
+                <!-- Dynamic properties will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container" >
+            <h2>Why RentEase ?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Affordable Options</h3>
+                    <p>We prioritize student budgets to bring you the best deals.</p>
+                </div>
+                <div class="feature">
+                    <h3>Convenient Locations</h3>
+                    <p>Find housing near universities, transport, and amenities.</p>
+                </div>
+                <div class="feature">
+                    <h3>User-Friendly Search</h3>
+                    <p>Filter properties by price, location, and other preferences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 RentEase. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
